@@ -15,23 +15,26 @@ window.addEventListener('scroll', () => {
 const hamburger = document.getElementById('hamburger');
 const navLinks  = document.querySelector('.nav__links');
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('open');
-  navLinks.classList.toggle('open');
-});
-
-navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
+function toggleMenu(forceClose) {
+  if (forceClose) {
     hamburger.classList.remove('open');
     navLinks.classList.remove('open');
-  });
+    document.body.classList.remove('menu-open');
+  } else {
+    hamburger.classList.toggle('open');
+    navLinks.classList.toggle('open');
+    document.body.classList.toggle('menu-open');
+  }
+}
+
+hamburger.addEventListener('click', () => toggleMenu());
+
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => toggleMenu(true));
 });
 
 document.addEventListener('click', (e) => {
-  if (!nav.contains(e.target)) {
-    hamburger.classList.remove('open');
-    navLinks.classList.remove('open');
-  }
+  if (!nav.contains(e.target)) toggleMenu(true);
 });
 
 /* ── Scroll reveal ── */
