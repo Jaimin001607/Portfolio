@@ -666,6 +666,154 @@ strong { color: var(--white); font-weight: 700; }
 }
 
 /* ================================================================
+   EDUCATION
+   ================================================================ */
+.edu-card {
+  background: rgba(0,0,0,0.18);
+  border: 2px solid rgba(255,255,255,0.15);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.edu-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--white), rgba(255,255,255,0.1));
+}
+
+.edu-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.edu-card__school h3 {
+  font-family: var(--ff-display);
+  font-size: 1.8rem;
+  color: var(--white);
+  letter-spacing: 0.03em;
+  margin-bottom: 4px;
+}
+
+.edu-card__date {
+  font-family: var(--ff-mono);
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.45);
+}
+
+.edu-card__gpa {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.edu-card__gpa-num {
+  display: block;
+  font-family: var(--ff-display);
+  font-size: 3.5rem;
+  color: var(--white);
+  line-height: 1;
+}
+
+.edu-card__gpa-label {
+  font-family: var(--ff-mono);
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.45);
+  letter-spacing: 0.05em;
+}
+
+.edu-card__degrees {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.edu-card__degree {
+  flex: 1;
+  min-width: 240px;
+  padding: 24px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.06);
+  transition: var(--transition);
+}
+
+.edu-card__degree:hover {
+  border-color: rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.1);
+}
+
+.edu-card__degree--primary {
+  border-color: rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.08);
+}
+
+.edu-card__degree-badge {
+  display: inline-block;
+  font-family: var(--ff-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 4px 14px;
+  background: var(--white);
+  color: var(--mat-dark);
+  border-radius: 50px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.edu-card__degree-badge--minor {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.7);
+}
+
+.edu-card__degree h4 {
+  font-family: var(--ff-display);
+  font-size: 1.4rem;
+  color: var(--white);
+  letter-spacing: 0.03em;
+  font-weight: 400;
+}
+
+.edu-card__courses-label {
+  font-family: var(--ff-mono);
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.35);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.edu-card__course-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.edu-card__course-tags span {
+  font-family: var(--ff-mono);
+  font-size: 0.72rem;
+  padding: 6px 14px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 50px;
+  color: rgba(255,255,255,0.5);
+  transition: var(--transition);
+}
+
+.edu-card__course-tags span:hover {
+  border-color: rgba(255,255,255,0.35);
+  color: var(--white);
+}
+
+/* ================================================================
    PROJECTS
    ================================================================ */
 .proj__grid {
