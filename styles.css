@@ -445,17 +445,11 @@ strong { color: var(--white); font-weight: 700; }
 }
 .about__photo-frame:hover { border-color: var(--white); }
 
-.about__photo-placeholder {
-  width: 100%; height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  color: rgba(255,255,255,0.3);
+.about__photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.about__photo-placeholder svg { width: 70px; }
-.about__photo-placeholder p { font-family: var(--ff-mono); font-size: 0.75rem; }
 
 .about__stats {
   display: grid;

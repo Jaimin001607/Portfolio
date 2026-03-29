@@ -94,11 +94,6 @@ form.addEventListener('submit', (e) => {
   }, 1200);
 });
 
-/* ── Resume button placeholder ── */
-document.getElementById('resume-btn').addEventListener('click', (e) => {
-  e.preventDefault();
-  alert('Replace this with your actual resume PDF link in index.html!');
-});
 
 /* ── Parallax tags on scroll ── */
 const tags = document.querySelectorAll('.hero__tag');
