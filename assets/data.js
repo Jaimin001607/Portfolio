@@ -4,7 +4,7 @@
 const PROFILE = {
   name: "Jaimin Suthar",
   role: "Mechanical Engineer",
-  tagline: "Mechanical engineer who brings hardware, software and electronics together to build machines that sense, think and move.",
+  tagline: "I'm a mechanical engineer who brings hardware, software and electronics together to build machines that sense, think and move.",
   school: "B.S. Mechanical Engineering, Minor in Computer Science · CSU Long Beach · Dec 2026",
   gpa: "3.57",
   email: "jaiminsuthar390@gmail.com",
