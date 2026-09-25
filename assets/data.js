@@ -6,7 +6,7 @@ const PROFILE = {
   role: "Mechanical Engineer",
   tagline: "Mechanical engineer who brings hardware, software and electronics together to build machines that sense, think and move.",
   school: "B.S. Mechanical Engineering, Minor in Computer Science · CSU Long Beach · Dec 2026",
-  gpa: "3.87",
+  gpa: "3.57",
   email: "jaiminsuthar390@gmail.com",
   linkedin: "https://www.linkedin.com/in/jaimin-suthar-251278222",
   resume: "assets/Jaimin_Suthar_Resume.pdf",
@@ -14,7 +14,7 @@ const PROFILE = {
     { value: "B.S. ME", label: "Mechanical Engineering + Computer Science minor" },
     { value: "2+ yrs", label: "R&D research with sensors & hardware" },
     { value: "25", label: "engineers led at Beach Aerial Division" },
-    { value: "3.87", label: "GPA, B.S. Mechanical Eng." },
+    { value: "3.57", label: "GPA, B.S. Mechanical Eng." },
   ],
 };
 
