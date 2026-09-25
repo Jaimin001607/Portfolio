@@ -1,381 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jaimin Suthar | Builder & Engineer</title>
-  <link rel="stylesheet" href="styles.css?v=5" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jaimin Suthar · Mechanical Engineer</title>
+  <meta name="description" content="Portfolio of Jaimin Suthar, a mechanical engineer combining hardware, software and electronics to build autonomous machines." />
+  <meta property="og:title" content="Jaimin Suthar · Mechanical Engineer" />
+  <meta property="og:image" content="assets/img/brake-caliper-render.jpg" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2315171c'/><text x='16' y='21' font-family='monospace' font-size='13' font-weight='700' fill='%23f5f4ef' text-anchor='middle'>JS</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css?v=14" />
 </head>
 <body>
-
-  <!-- ─── CUTTING MAT GRID (SVG background) ─── -->
-  <div class="mat-bg" id="mat-bg"></div>
-
-  <!-- ─── NAV ─── -->
-  <header class="nav" id="nav">
-    <div class="nav__logo">JS<span class="dot">.</span></div>
-    <nav class="nav__links">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-  </header>
-
-  <!-- ─── HERO ─── -->
-  <section class="hero" id="home">
-    <div class="hero__scattered">
-      <span class="hero__tag hero__tag--1">Controls & Robotics</span>
-      <span class="hero__tag hero__tag--2">UAV Systems</span>
-      <span class="hero__tag hero__tag--3">FEA & Simulation</span>
-      <span class="hero__tag hero__tag--4">Sensor Integration</span>
-      <span class="hero__tag hero__tag--5">MATLAB / Python</span>
-      <span class="hero__tag hero__tag--6">SolidWorks</span>
-      <span class="hero__tag hero__tag--7">CSULB '26</span>
-      <span class="hero__tag hero__tag--8">3.67 GPA</span>
-    </div>
-    <div class="hero__center">
-      <p class="hero__pre">I design, build & break things</p>
-      <h1 class="hero__name">
-        <span class="hero__first">JAIMIN</span>
-        <span class="hero__last">SUTHAR</span>
-      </h1>
-      <p class="hero__sub">Mechanical & Systems Engineer</p>
-      <div class="hero__cta">
-        <a href="#projects" class="btn btn--dark">See My Work</a>
-        <a href="#contact" class="btn btn--outline">Say Hello</a>
+  <nav class="nav">
+    <div class="wrap">
+      <a class="brand" href="#top"><span class="brand-mark">JS</span><span data-name></span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#work">Projects</a>
+        <a href="#gallery">CAD & Analysis</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
       </div>
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">◐</button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
     </div>
-    <div class="hero__scroll">
-      <div class="hero__scroll-line"></div>
-      <span>scroll</span>
-    </div>
-  </section>
+  </nav>
 
-  <!-- ─── ABOUT ─── -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="section__label">01 / About</div>
-      <div class="about__grid">
-        <div class="about__left">
-          <h2 class="section__title">I'm Jaimin.</h2>
-          <p class="about__bio">
-            A <strong>Mechanical Engineering</strong> student at Cal State Long Beach with a minor in
-            <strong>Computer Science</strong> (graduating Dec 2026). I like to work with mechanical systems and computing hardware. 
-          </p>
-          <p class="about__bio">
-            I'm a <strong>builder and problem-solver</strong> who prefers turning ideas into working systems rather than leaving them theoretical. Skilled in CAD designing, prototyping, and 
-            performance optimization, with experience applying <strong>analytical and computational thinking</strong> to real-world problems.
-            Particularly <strong>interested in high-impact projects</strong> where both hands-on skills and problem-solving 
-            are required.
-          </p>
-          <a href="resume.pdf" download class="btn btn--dark">Download Resume</a>
-        </div>
-        <div class="about__right">
-          <div class="about__photo-frame">
-            <img src="photo.jpg" alt="Jaimin Suthar" />
+  <main id="top">
+    <!-- HERO -->
+    <header class="hero">
+      <div class="wrap">
+        <div>
+          <div class="eyebrow mono">Mechanical · Electrical · Software</div>
+          <div class="intro">
+            <h1>Hi, I'm <span data-name></span>.</h1>
+            <img class="avatar" src="assets/img/headshot.jpg" alt="Photo of Jaimin Suthar" width="400" height="400" />
           </div>
-          <div class="about__stats">
-            <div class="stat"><span class="stat__num">3.67</span><span class="stat__label">GPA</span></div>
-            <div class="stat"><span class="stat__num">3+</span><span class="stat__label">Years Exp</span></div>
-            <div class="stat"><span class="stat__num">2000+</span><span class="stat__label">CAD Hours</span></div>
+          <p class="lead" data-tagline></p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#work">View projects →</a>
+            <a class="btn" href="#gallery">CAD gallery</a>
+          </div>
+        </div>
+        <div>
+          <div class="figure">
+            <video src="assets/video/quad-flight.mp4" poster="assets/img/quad-flight-poster.jpg" muted loop playsinline autoplay data-autoplay></video>
+            <span class="crosshair tl"></span><span class="crosshair tr"></span>
+            <span class="fig-tag mono">Quad flying autonomously · NVIDIA Jetson</span>
           </div>
         </div>
       </div>
-      <div class="tools-strip">
-        <div class="tools-strip__inner">
-          <span>SolidWorks</span><span>CATIA</span><span>AutoCAD</span><span>ANSYS</span>
-          <span>Abaqus</span><span>COMSOL</span><span>MATLAB</span><span>Python</span>
-          <span>LabVIEW</span><span>OpenCV</span><span>C++</span><span>3D Printing</span>
-          <span>SolidWorks</span><span>CATIA</span><span>AutoCAD</span><span>ANSYS</span>
-          <span>Abaqus</span><span>COMSOL</span><span>MATLAB</span><span>Python</span>
-          <span>LabVIEW</span><span>OpenCV</span><span>C++</span><span>3D Printing</span>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-sec">
+      <div class="wrap about">
+        <div class="figure reveal"><img src="assets/img/lab-presentation.jpg" alt="Presenting UAV work in the Beach Aerial Division lab" /><span class="fig-tag mono">Beach Aerial Division lab</span></div>
+        <div class="reveal">
+          <div class="mono muted">01 / About</div>
+          <h2 style="font: 600 clamp(30px,4vw,42px)/1.1 var(--display); letter-spacing:-.02em; margin:6px 0 16px">Designing it, testing it, and building it again.</h2>
+          <p>I'm a mechanical engineering student at CSU Long Beach with a minor in computer science. I like projects that span the whole process: model it in SolidWorks, check it with FEA, build it, break it, and use the results to make the next version better.</p>
+          <p>Right now that means leading UAV development at Beach Aerial Division, where I combine mechanical design with electronics, embedded compute and computer vision. This summer I also did reliability testing of hydrogen electrolysis hardware at HyAxiom.</p>
+          <div class="edu"><b data-gpa></b><span class="muted" data-school></span></div>
+          <div class="hero-cta" style="margin-top:20px"><a class="btn primary" data-resume target="_blank" rel="noopener">Download resume (PDF) ↓</a></div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ─── SKILLS ─── -->
-  <section class="section section--alt" id="skills">
-    <div class="container">
-      <div class="section__label">02 / Skills</div>
-      <h2 class="section__title">What I Do</h2>
-      <div class="skills__grid">
-        <div class="skill-card">
-          <div class="skill-card__num">01</div>
-          <h3>Mechanical Design<br/>&amp; Prototyping</h3>
-          <ul>
-            <li>SolidWorks / CATIA / AutoCAD</li>
-            <li>Machining-ready design</li>
-            <li>3D printing & rapid prototyping</li>
-            <li>Material selection & DFM</li>
-          </ul>
+    <!-- NUMBERS -->
+    <section class="stats-sec">
+      <div class="wrap"><div class="stats" id="stats"></div></div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="work">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div><div class="mono muted">02 / Selected work</div><h2>Projects</h2></div>
+          <p>Each project goes from the problem to the CAD, the analysis, the build, and the test results. Click one to open the full breakdown.</p>
         </div>
-        <div class="skill-card">
-          <div class="skill-card__num">02</div>
-          <h3>Analysis<br/>&amp; Testing</h3>
-          <ul>
-            <li>FEA (ANSYS, Abaqus)</li>
-            <li>Thermal & CFD analysis</li>
-            <li>ANSYS Fluent / COMSOL</li>
-            <li>Durability & cycle testing</li>
-          </ul>
+        <div class="chips" id="chips" role="group" aria-label="Filter projects"></div>
+        <div class="grid" id="projectGrid"></div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="alt">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div><div class="mono muted">03 / CAD & analysis</div><h2>Models, FEA & optimization</h2></div>
+          <p>SolidWorks assemblies, simulation results and topology studies. Click any image to enlarge it.</p>
         </div>
-        <div class="skill-card">
-          <div class="skill-card__num">03</div>
-          <h3>Controls<br/>&amp; Systems</h3>
-          <ul>
-            <li>Control systems fundamentals</li>
-            <li>IMU & sensor integration</li>
-            <li>Real-time data acquisition</li>
-            <li>Signal analysis & processing</li>
-          </ul>
+        <div class="gallery" id="galleryGrid"></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div><div class="mono muted">04 / Experience</div><h2>Where I've worked</h2></div>
+          <p>Reliability testing, research and student engineering teams.</p>
         </div>
-        <div class="skill-card">
-          <div class="skill-card__num">04</div>
-          <h3>Programming<br/>&amp; Software</h3>
-          <ul>
-            <li>Python (NumPy, SciPy, OpenCV)</li>
-            <li>MATLAB & Simulink</li>
-            <li>C++ (basic)</li>
-            <li>LabVIEW</li>
-          </ul>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="alt">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div><div class="mono muted">05 / Toolbox</div><h2>Skills</h2></div>
+        </div>
+        <div class="skills" id="skillGrid"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact alt">
+      <div class="wrap">
+        <div class="mono muted">06 / Contact</div>
+        <h2>Let's build something.</h2>
+        <p>I'm looking for full-time mechanical, design and hardware roles starting in 2027. The fastest way to reach me is email.</p>
+        <div class="hero-cta">
+          <a class="btn primary" data-email>Email me</a>
+          <a class="btn" data-linkedin target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn" data-resume target="_blank" rel="noopener">Resume (PDF)</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- ─── EXPERIENCE ─── -->
-  <section class="section" id="experience">
-    <div class="container">
-      <div class="section__label">03 / Experience</div>
-      <h2 class="section__title">Experience I've Gained</h2>
-      <div class="exp__grid">
+  <footer><div class="wrap"><span>© 2026 <span data-name></span></span><span class="mono">Designed & built by hand, like the hardware</span></div></footer>
 
-        <div class="exp-card">
-          <div class="exp-card__header">
-            <span class="exp-card__date">Jun 2026 &mdash; Present</span>
-            <span class="exp-card__badge">25+ Member Team Lead</span>
-          </div>
-          <h3>UAV Systems Engineer</h3>
-          <h4>Beach Aerial Division</h4>
-          <ul>
-            <li>Leading cross-functional autonomy, manufacturing, and controls teams (25+ members) across quadcopter and fixed-wing UAV platforms, delivering autonomous flight systems with full mission capabilities</li>
-            <li>Implementing sensor-driven autonomy by integrating IMU, GPS, altitude, and thermal imaging systems with onboard flight controllers for stable and repeatable missions</li>
-            <li>Developing mission-level autonomous workflows for thermal sensing, including GPS-tagged data acquisition, real-time telemetry monitoring, and fail-safe handling</li>
-            <li>Conducting flight testing and validation of autonomous behaviors, tuning control parameters, and verifying system reliability for competition-ready UAV deployment</li>
-          </ul>
-          <div class="exp-card__tags">
-            <span>Autonomy</span><span>UAV</span><span>IMU/GPS</span><span>Thermal Imaging</span><span>Flight Testing</span>
-          </div>
-        </div>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lb-btn lb-close" aria-label="Close">✕</button>
+    <button class="lb-btn lb-prev" aria-label="Previous">‹</button>
+    <button class="lb-btn lb-next" aria-label="Next">›</button>
+    <figure><img alt="" /><figcaption></figcaption></figure>
+  </div>
 
-        <div class="exp-card">
-          <div class="exp-card__header">
-            <span class="exp-card__date">Dec 2024 &mdash; Present</span>
-            <span class="exp-card__badge">Research</span>
-          </div>
-          <h3>Research Engineer</h3>
-          <h4>California State University, Long Beach</h4>
-          <ul>
-            <li>Led development of IMU-based sensing systems for real-time motion tracking in wearable applications</li>
-            <li>Built real-time MATLAB/Python data pipeline, reducing latency by 44%</li>
-            <li>Integrated sensor hardware with mechanical systems for validation and performance analysis</li>
-            <li>Developed self-powered sensing system bridging mechanical design, electronics, and data systems</li>
-          </ul>
-          <div class="exp-card__tags">
-            <span>IMU</span><span>MATLAB</span><span>Python</span><span>Sensors</span>
-          </div>
-        </div>
-
-        <div class="exp-card">
-          <div class="exp-card__header">
-            <span class="exp-card__date">Nov 2022 &mdash; Present</span>
-            <span class="exp-card__badge">Leadership</span>
-          </div>
-          <h3>Avionics Engineering Head</h3>
-          <h4>CSULB Beach Launch Team</h4>
-          <ul>
-            <li>Designed and validated flight-critical hardware for club rockets</li>
-            <li>System-level trade studies improving fuel delivery by 12-20%</li>
-            <li>Integration and testing of multi-component aerospace systems</li>
-          </ul>
-          <div class="exp-card__tags">
-            <span>Aerospace</span><span>Avionics</span><span>Systems</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── EDUCATION ─── -->
-  <section class="section section--alt" id="education">
-    <div class="container">
-      <div class="section__label">04 / Education</div>
-      <h2 class="section__title">Where I Studied</h2>
-      <div class="edu-card">
-        <div class="edu-card__top">
-          <div class="edu-card__school">
-            <h3>California State University, Long Beach</h3>
-            <span class="edu-card__date">Aug 2022 &mdash; Dec 2026</span>
-          </div>
-          <div class="edu-card__gpa">
-            <span class="edu-card__gpa-num">3.67</span>
-            <span class="edu-card__gpa-label">/ 4.0 GPA</span>
-          </div>
-        </div>
-        <div class="edu-card__degrees">
-          <div class="edu-card__degree edu-card__degree--primary">
-            <span class="edu-card__degree-badge">Bachelor's</span>
-            <h4>Mechanical Engineering</h4>
-          </div>
-          <div class="edu-card__degree edu-card__degree--minor">
-            <span class="edu-card__degree-badge edu-card__degree-badge--minor">Minor</span>
-            <h4>Computer Science</h4>
-          </div>
-        </div>
-        <div class="edu-card__courses">
-          <p class="edu-card__courses-label">Relevant Coursework</p>
-          <div class="edu-card__course-tags">
-            <span>Thermodynamics</span>
-            <span>Heat Transfer</span>
-            <span>Fluid Mechanics</span>
-            <span>Mechanical Design</span>
-            <span>Finite Element Analysis</span>
-            <span>Engineering Documentation</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── PROJECTS ─── -->
-  <section class="section" id="projects">
-    <div class="container">
-      <div class="section__label">05 / Projects</div>
-      <h2 class="section__title">Things I've Made</h2>
-      <div class="proj__grid">
-
-        <article class="proj-card proj-card--big">
-          <div class="proj-card__badge">Featured</div>
-          <h3>Autonomous Quadcopter</h3>
-          <p class="proj-card__team">CSU UASC &middot; Jan 2026 &mdash; Present</p>
-          <p>Computer vision-assisted autonomous drone with OpenCV pipeline for target detection, payload delivery, and multi-checkpoint navigation under competition constraints.</p>
-          <div class="proj-card__tech">
-            <span>OpenCV</span><span>Python</span><span>Flight Control</span><span>Computer Vision</span>
-          </div>
-        </article>
-
-        <article class="proj-card">
-          <h3>Brake Caliper Designer</h3>
-          <p class="proj-card__team">FSAE Team &middot; Jan 2024 &mdash; Feb 2025</p>
-          <p>Designed and manufactured mechanical braking systems using SolidWorks and ANSYS. Improved braking performance by 14% and thermal dissipation by 28%.</p>
-          <div class="proj-card__tech">
-            <span>SolidWorks</span><span>ANSYS</span><span>FEA</span><span>Thermal</span>
-          </div>
-        </article>
-
-        <article class="proj-card">
-          <h3>Thruster Ring Design</h3>
-          <p class="proj-card__team">Beach Launch Team &middot; May &mdash; Sept 2023</p>
-          <p>Thermal-fluid analysis of boiling systems using ANSYS Fluent and COMSOL for cooling design in high-performance rocket systems.</p>
-          <div class="proj-card__tech">
-            <span>ANSYS Fluent</span><span>COMSOL</span><span>CFD</span>
-          </div>
-        </article>
-
-        <article class="proj-card">
-          <h3>IMU Motion Tracking</h3>
-          <p class="proj-card__team">CSULB Research &middot; Dec 2024 &mdash; Present</p>
-          <p>Real-time wearable sensing system with MATLAB/Python data pipeline. Reduced processing latency by 44%.</p>
-          <div class="proj-card__tech">
-            <span>MATLAB</span><span>Python</span><span>IMU</span><span>DAQ</span>
-          </div>
-        </article>
-
-        <article class="proj-card">
-          <h3>Rocket Avionics</h3>
-          <p class="proj-card__team">Beach Launch Team &middot; Nov 2022 &mdash; Present</p>
-          <p>Flight-critical hardware and system-level trade studies for club rockets. Improved fuel delivery by 12-20%.</p>
-          <div class="proj-card__tech">
-            <span>Avionics</span><span>Systems Eng</span><span>Testing</span>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── CONTACT ─── -->
-  <section class="section" id="contact">
-    <div class="container">
-      <div class="section__label">06 / Contact</div>
-      <div class="contact__layout">
-        <div class="contact__left">
-          <h2 class="section__title">Let's Build<br/>Something.</h2>
-          <p class="contact__intro">
-            Open to internships, co-ops, research collaborations, and engineering opportunities.
-          </p>
-          <div class="contact__links">
-            <a href="mailto:jaiminsuthar390@gmail.com" class="contact__item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,14 22,4"/></svg>
-              <span>jaiminsuthar390@gmail.com</span>
-            </a>
-            <a href="tel:+15622542644" class="contact__item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c1.21.34 2 .57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              <span>+1 (562) 254-2644</span>
-            </a>
-            <a href="https://linkedin.com/in/jaimin-suthar-251278222" target="_blank" rel="noopener" class="contact__item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="3"/><line x1="8" y1="10" x2="8" y2="17"/><line x1="8" y1="7" x2="8" y2="7.5"/><line x1="13" y1="17" x2="13" y2="13"/><path d="M13 10 Q13 8 15.5 8 Q18 8 18 11 L18 17"/></svg>
-              <span>LinkedIn Profile</span>
-            </a>
-          </div>
-        </div>
-        <form class="contact__form" id="contact-form">
-          <div class="form__row">
-            <div class="form__group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your Name" required />
-            </div>
-            <div class="form__group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="your@email.com" required />
-            </div>
-          </div>
-          <div class="form__group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Project / Opportunity" required />
-          </div>
-          <div class="form__group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
-          </div>
-          <button type="submit" class="btn btn--dark btn--full">Send Message</button>
-          <div class="form__success" id="form-success">Message sent! I'll get back to you soon.</div>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── FOOTER ─── -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <span class="footer__logo">JS<span class="dot">.</span></span>
-        <p>Jaimin Suthar &middot; Maker & Engineer</p>
-        <p class="footer__copy">&copy; <span id="year"></span></p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+  <script src="assets/data.js?v=14"></script>
+  <script src="assets/main.js?v=14"></script>
 </body>
 </html>
