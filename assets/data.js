@@ -14,7 +14,7 @@ const PROFILE = {
     { value: "B.S. ME", label: "Mechanical Engineering + Computer Science minor" },
     { value: "2+ yrs", label: "R&D research with sensors & hardware" },
     { value: "25", label: "engineers led at Beach Aerial Division" },
-    { value: "3.57", label: "GPA, B.S. Mechanical Eng." },
+    { value: "1,300+", label: "CAD hours across projects & work experience" },
   ],
 };
 
